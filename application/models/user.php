@@ -5,7 +5,6 @@ class User extends CI_Model {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->output->enable_profiler();
 	}
 
 	public function new_user($user){
@@ -29,4 +28,4 @@ class User extends CI_Model {
 
 }
 
-//end of main controller
+//end of user model

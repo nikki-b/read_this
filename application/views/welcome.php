@@ -1,4 +1,4 @@
-<?php $this->load->view("partials/header_view")?>
+<?php $this->load->view("partials/header")?>
 <div class="container">
 	<div class="col-xs-10">
 	<h2>Welcome to BookReview!</h2>
@@ -6,19 +6,34 @@
 		<h3>Register</h3>
 		<input type="hidden" name="action" value="register">
 		<div class="form-group">
-			<label class="col-xs-5">Name: </label><input class="col-xs-7" type="text" name="name">
+			<label class="col-xs-3 control-label">Name: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="text" name="name">
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Alias: </label><input class="col-xs-7" type="text" name="alias">
+			<label class="col-xs-3 control-label">Alias: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="text" name="alias">
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Email: </label><input class="col-xs-7" type="text" name="email">
+			<label class="col-xs-3 control-label">Email: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="text" name="email">
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Password: </label><input class="col-xs-7" type="password" name="password">
+			<label class="col-xs-3 control-label">Password: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="password" name="password">
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Confirm Password: </label><input class="col-xs-7" type="password" name="confirmPassword">
+			<label class="col-xs-3 control-label">Confirm Password: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="password" name="confirmPassword">
+			</div>
 		</div>
 		<div class="form-group">
 			<input class="pull-right btn btn-default" type="submit" value="Register">
@@ -31,16 +46,20 @@
 			<input type="hidden" name="action" value="login">
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Email: </label><input class="col-xs-7" type="text" name="email">
+			<label class="col-xs-3 control-label">Email: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="text" name="email">
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-xs-5">Password: </label><input class="col-xs-7" type="password" name="password">
+			<label class="col-xs-3 control-label">Password: </label>
+			<div class="col-xs-9">
+				<input class="form-control" type="password" name="password">
+			</div>
 		</div>
 		<div class="form-group">
 			<input class="btn btn-default pull-right" type="submit" value="Login">
 		</div>
 	</form>
 	<span class="text-danger"><?= $this->session->flashdata("login_errors") ?></span>
-</div>
-</body>
-</html>
+<?php $this->load->view("partials/footer")?>

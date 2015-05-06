@@ -5,7 +5,6 @@ class Users extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->output->enable_profiler();
 	}
 
 	public function new_user()
@@ -29,7 +28,7 @@ class Users extends CI_Controller {
 				"logged_in" => "true"
 				)
 			);
-			redirect("/users/dashboard");
+			redirect("/dashboard");
 			}
 			else{
 				$this->session->set_flashdata("register_errors", "Unable to register, please contact the website administrator.");
@@ -48,7 +47,7 @@ class Users extends CI_Controller {
 				"logged_in" => "true"
 				)
 			);
-			redirect("/users/dashboard");
+			redirect("/dashboard");
 		}
 		else{
 			$this->session->set_flashdata("login_errors", "Invalid email and/or password.");
@@ -87,4 +86,4 @@ class Users extends CI_Controller {
 	}
 }
 
-//end of main controller
+//end of users controller

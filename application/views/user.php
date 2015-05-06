@@ -1,14 +1,13 @@
-<?php $this->load->view("partials/header_view")?>
-<?php $this->load->view("partials/navin_view")?>
+<?php $this->load->view("partials/header")?>
+<?php $this->load->view("partials/nav")?>
 	<!-- USER INFO -->
 	<h2>User Alias: <?=$profile["alias"]?></h2>
-	<h3>Name: <?=$profile["name"]?></h3>
-	<h3>Email: <?=$profile["email"]?></h3>
-	<h3>Total Reviews: <?=$count?></h3>
+	<h5>Name: <?=$profile["name"]?></h5>
+	<h5>Email: <?=$profile["email"]?></h5>
+	<h5>Total Reviews: <?=$count?></h5>
 	<!-- LIST OF REVIEWED BOOKS -->
 	<h3>Posted Reviews on the following books:</h3>
 <?php foreach($reviews as $review){?>
 				<p><a href="/reviews/view_book/<?=$review['book_id']?>"><?=$review["title"]?></a></p>
 <?php	}?>
-</body>
-</html>
+<?php $this->load->view("partials/footer")?>

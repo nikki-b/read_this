@@ -5,7 +5,6 @@ class Review extends CI_Model {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->output->enable_profiler();
 	}
 
 	public function get_authors(){

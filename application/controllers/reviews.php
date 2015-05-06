@@ -5,12 +5,11 @@ class Reviews extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->output->enable_profiler();
 	}
 
 	public function add_new()
 	{
-		// ADDING REVIEW FROM THE ADD BOOK PAGE
+		// ADDING NEW BOOK AND REVIEW
 		if($this->input->post("action") === "new_book"){
 			// CHECKING THE FORM
 			$this->form_validation->set_rules("title", "Title", "required");
