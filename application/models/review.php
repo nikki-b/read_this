@@ -2,11 +2,6 @@
 
 class Review extends CI_Model {
 
-	public function __construct()
-	{
-		parent::__construct();
-	}
-
 	public function get_authors(){
 		$query = "SELECT * from authors";
 		return $this->db->query($query)->result_array();

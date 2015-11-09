@@ -2,11 +2,6 @@
 
 class User extends CI_Model {
 
-	public function __construct()
-	{
-		parent::__construct();
-	}
-
 	public function new_user($user){
 		$query = "INSERT INTO users (name, alias, email, password, created_at, updated_at) VALUES (?,?,?,?, NOW(), NOW())";
 		$values = array($user["name"], $user["alias"], $user["email"], $user["password"]);

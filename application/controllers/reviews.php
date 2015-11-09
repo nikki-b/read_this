@@ -2,11 +2,6 @@
 
 class Reviews extends CI_Controller {
 
-	public function __construct()
-	{
-		parent::__construct();
-	}
-
 	public function add_new()
 	{
 		// ADDING NEW BOOK AND REVIEW
