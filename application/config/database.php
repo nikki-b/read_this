@@ -5,17 +5,17 @@ $active_record = TRUE;
 
 if(ENVIRONMENT == 'production')
 {
-	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = '';
-	$db['default']['database'] = '';
+	$db['default']['hostname'] = 'us-iron-auto-dca-02-a.cleardb.net';
+	$db['default']['username'] = 'bb89bbe319b8e6';
+	$db['default']['password'] = 'dd541f19';
+	$db['default']['database'] = 'heroku_177f4e049d5be7a';
 }
 else
 {
-	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = 'root';
-	$db['default']['database'] = 'book_reviews';
+	$db['default']['hostname'] = 'us-iron-auto-dca-02-a.cleardb.net';
+	$db['default']['username'] = 'bb89bbe319b8e6';
+	$db['default']['password'] = 'dd541f19';
+	$db['default']['database'] = 'heroku_177f4e049d5be7a';
 }
 
 $db['default']['dbdriver'] = 'mysql';
