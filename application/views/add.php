@@ -3,7 +3,7 @@
 <!-- MENU -->
 <h2>Add A New Book and A Review</h2>
 <!-- ADD BOOK/REVIEW, one form to insert in all tables-->
-<form action="/reviews/add_new" method="post">
+<form action="/reviews/add_new" method="post" enctype="multipart/formdata">
 	<input type="hidden" name="action" value="new_book">
 	<div class="form-group">
 		<label><h4>Book Title:</h4><input type="text" class="form-control" name="title"></label>
@@ -24,6 +24,9 @@
 	</div>
 	<div class="form-group">
 		<label><h4>Review:</h4><textarea name="review" class="form-control"></textarea></label>
+	</div>
+	<div class="form-group">
+		<label><h4>Book Cover (Upload Image):</h4><input type="file" name="userfile" class="form-control"></label>
 	</div>
 	<div class="form-group">
 		<label><h4>Rating:</h4>

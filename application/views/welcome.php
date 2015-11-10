@@ -1,12 +1,9 @@
 <?php $this->load->view("partials/header")?>
-<script>
-	$(document).ready(function()){
-		$("body").css("background-image","url('')")
-	}
-</script>
 <div class="container">
 	<div class="col-sm-10">
-		<h2>Welcome to BookReview!</h2>
+		<div class="row">
+			<h2 class="col-sm-6 col-sm-offset-5">have you <strong>read this</strong>?</h2>
+		</div>
 		<form class="registration form-horizontal col-sm-6" action="/users/new_user" method="post">
 			<input type="hidden" name="action" value="register">
 			<div class="form-group">

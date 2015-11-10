@@ -8,7 +8,7 @@
 		<h3>Recent Book Reviews</h3>
 <?php foreach($reviews as $review){?>
 		<div class="well">
-		<h4><a href="/reviews/view_book/<?=$review['book_id']?>"><?=$review["title"]?></a></h4>
+		<h4><a href="/reviews/view_book/<?=$review['book_id']?>" class="title"><?=$review["title"]?></a></h4>
 		<p>Rating: 
 <?php
 			for($x = 1; $x <= $review["rating"]; $x++) {

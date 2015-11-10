@@ -1,0 +1,11 @@
+/* brown : #8F6540 */
+/* green : #408F65 */
+/* purple : #65408F */
+body{
+	background-image: url("./imgs/paper_fibers.png");
+	font-family: 'Roboto', sans-serif;
+}
+
+.title{
+	font-family: 'Droid Serif', serif; 
+}

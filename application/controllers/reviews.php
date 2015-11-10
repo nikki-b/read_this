@@ -4,6 +4,7 @@ class Reviews extends CI_Controller {
 
 	public function add_new()
 	{
+		
 		// ADDING NEW BOOK AND REVIEW
 		if($this->input->post("action") === "new_book"){
 			// CHECKING THE FORM
@@ -16,6 +17,7 @@ class Reviews extends CI_Controller {
 				redirect("/reviews/add_new");
 			}
 			else{
+
 				$input = $this->input->post();
 				$userID = $this->session->userdata("user");
 				// ADDING WITH NEW AUTHOR
@@ -38,13 +40,7 @@ class Reviews extends CI_Controller {
 				}
 				// IF BOOK IS ADDED, GO TO BOOK PAGE WITH THE ID
 				if($bookID){
-					$book = $this->review->get_book($bookID);
-					$reviews = $this->review->get_reviews_by_book($bookID);
-					$this->load->view("book", array(
-						"book" => $book,
-						"reviews" => $reviews
-						)
-					);
+					redirect("/reviews/view_book".$bookID);
 				}
 			}
 		}
@@ -91,6 +87,7 @@ class Reviews extends CI_Controller {
 			)
 		);
 	}
+
 }
 
 //end of reviews controller
